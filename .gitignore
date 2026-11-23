@@ -1,0 +1,20 @@
+# 编译产物
+build/
+build-*/
+_probe/build/
+_shots/build/
+
+# 数据库文件（里面是明文密码，不放进版本库）
+*.db
+*.db-journal
+
+# 报告生成的中间文件
+_backup/
+_report/
+
+# 截图辅助程序与输出（只用来生成报告图片，不属于作业代码）
+_shots/
+
+# Qt Creator 本地配置
+*.user
+CMakeLists.txt.user*
