@@ -25,6 +25,10 @@ public:
     QSqlDatabase db() const;              // 取出连接，给 QSqlQuery / QSqlTableModel 用
     QString lastError() const;            // 上次失败的原因（用来弹提示框）
 
+    // 建库：把一个不存在的路径变成带表结构和初始数据的完整数据库。
+    // 有了它，别人把仓库 clone 下来直接就能跑，不用先手动建库。
+    bool createDatabase(const QString &dbPath);
+
 private:
     DbHelper() {}                                  // 私有构造
     DbHelper(const DbHelper &) = delete;           // 禁止拷贝

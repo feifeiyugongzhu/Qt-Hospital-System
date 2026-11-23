@@ -3,6 +3,8 @@ build/
 build-*/
 _probe/build/
 _shots/build/
+_pathtest/
+_dbtest/
 
 # 数据库文件（里面是明文密码，不放进版本库）
 *.db
